@@ -8,7 +8,7 @@ Opció Menú:
 
 En la creació de l'opció menú, vam topar amb el problema de desconeixer certs procediments i comandes relacionats amb aquesta tasca de la práctica. Les complicacions varen residir bàsicament en les funcions i les comandes, en particular les de "sleep" i "clear".
 
-Opció 1:
+Opció  1:
 Els problemes referents a aquesta opció varen sorgir en haver de modificar els arxius tant de "oscars_age_male.csv" com de "oscars_age_female.csv", quedant aquests d'una forma més senzilla a l'hora de realitzar els procediments.
 
 Opció 1.1/1.2:
