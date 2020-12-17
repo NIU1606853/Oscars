@@ -27,8 +27,8 @@ Comandes:
 -echo
 -cut
 -cat
--head
 -tail
+-head
 -while
 -case
 -read
