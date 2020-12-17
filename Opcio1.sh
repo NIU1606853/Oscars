@@ -16,24 +16,24 @@ echo
 #Opcio escollida per usur@: 1
 function Opcio1 ()
 {
-    Actor=cat oscar_age_male.csv | cut -d, -f4
-    AnyM=cat oscar_age_male.csv | cut -d, -f2
-    EdatM=cat oscar_age_male.csv | cut -d, -f3
-    PeliM=cat oscar_age_male.csv | cut -d, -f5
+    Actor=`cat oscar_age_male.csv | cut -d, -f4`
+    AnyM=`cat oscar_age_male.csv | cut -d, -f2`
+    EdatM=`cat oscar_age_male.csv | cut -d, -f3`
+    PeliM=`cat oscar_age_male.csv | cut -d, -f5`
 
-    RespostaM=paste <(echo "$Actor") <(echo "$AnyM") <(echo "$EdatM") <(echo "$PeliM")
+    RespostaM=`paste <(echo "$Actor") <(echo "$AnyM") <(echo "$EdatM") <(echo "$PeliM")`
     echo "$RespostaM"
 }
 
 #Opcio escollida per usur@: 2
 function Opcio2 ()
 {
-    EdatF=cat oscar_age_female.csv | cut -d, -f3
-    Actiu=cat oscar_age_female.csv | cut -d, -f4
-    AnyF=cat oscar_age_female.csv | cut -d, -f2
-    PeliF=cat oscar_age_female.csv | cut -d, -f5
+    EdatF=`cat oscar_age_female.csv | cut -d, -f3`
+    Actiu=`cat oscar_age_female.csv | cut -d, -f4`
+    AnyF=`cat oscar_age_female.csv | cut -d, -f2`
+    PeliF=`cat oscar_age_female.csv | cut -d, -f5`
 
-    RespostaF=paste <(echo "$EdatF") <(echo "$Actiu") <(echo "$AnyF") <(echo "$PeliF")
+    RespostaF=`paste <(echo "$EdatF") <(echo "$Actiu") <(echo "$AnyF") <(echo "$PeliF")`
     echo "$RespostaF"
 }
 
@@ -51,21 +51,21 @@ function RESULTAT ()
 }
 function RESPOSTES ()
 {
-    any=cat oscar_age_male.csv | cut -d, -f2 | head -$i | tail +$i
+    any=`cat oscar_age_male.csv | cut -d, -f2 | head -$i | tail +$i`
 
-    actor=cut -d, -f4 oscar_age_male.csv | head -$i | tail +$i
-    actriu=cut -d, -f4 oscar_age_female.csv | head -$i | tail +$i
+    actor=`cut -d, -f4 oscar_age_male.csv | head -$i | tail +$i`
+    actriu=`cut -d, -f4 oscar_age_female.csv | head -$i | tail +$i`
 
-    edatH=cut -d, -f3 oscar_age_male.csv | head -$i | tail +$i
-    edatD=cut -d, -f3 oscar_age_female.csv | head -$i | tail +$i
+    edatH=`cut -d, -f3 oscar_age_male.csv | head -$i | tail +$i`
+    edatD=`cut -d, -f3 oscar_age_female.csv | head -$i | tail +$i`
 
-    peliH=cut -d, -f5 oscar_age_male.csv | head -$i | tail +$i
-    peliD=cut -d, -f5 oscar_age_female.csv | head -$i | tail +$i
+    peliH=`cut -d, -f5 oscar_age_male.csv | head -$i | tail +$i`
+    peliD=`cut -d, -f5 oscar_age_female.csv | head -$i | tail +$i`
 }
 
 function NUM_LINIES ()
 {
-    linies=cat oscar_age_male.csv | wc -l
+    linies=`cat oscar_age_male.csv | wc -l`
 }
 
 function Opcio3 ()
